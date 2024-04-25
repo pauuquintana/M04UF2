@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<characters>
+	<character id="1">
+		<name>El Fary </name>
+		<age>86</age>
+		<gender value= "N" />
+		<level value= "200" />
+		<health>70</health>
+		<weight>47</weight>
+		<height>1.2</height>
+		<origin>GI</origin>
+	</character>
+	<character id="2">
+		<name>El Cigala </name>
+		<age>54</age>
+		<gender value="M" />
+		<level value="150" />
+		<health>80</health>
+		<weight>150</weight>
+		<height>2.4</height>
+		<origin>RM</origin>
+	</character>
+	<character id="3">
+		<name>El Churumbel </name>
+		<age>33</age>
+		<gender value="M" />
+		<level value="33" />
+		<health>33</health>
+		<weight>333</weight>
+		<height>3.3</height>
+		<origin>AS</origin>
+	</character>
+	<character id="4">
+		<name>El Kiko </name>
+		<age>56</age>
+		<gender value="F" />
+		<level value="69" />
+		<health>100</health>
+		<weight>1.1</weight>
+		<height>420</height>
+		<origin>RG</origin>
+	</character>
+</characters>

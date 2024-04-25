@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<items>
+	<item id="1">
+		<item>Guitarra</item>
+		<type>Instrumento</type>
+		<rarity value="5" />
+	</item>
+	<item>
+		<item>Piti</item>
+		<type>Droga</type>
+		<rarity value="15" />
+	</item>
+	<item>
+		<item>Bollo</item>
+		<type>Comida</type>
+		<rarity value="3" />
+	</item>
+	<item>
+		<item>Escobilla</item>
+		<type>Objeto</type>
+		<rarity value="1" />
+	</item>
+
+
+
+</items>
+
+
+

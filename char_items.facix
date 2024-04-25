@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<characters_items>
+	<character_item id="1">
+		<character id="3"/>
+		<item id= "1" />
+	</character_item>
+	<character_item id="2">
+		<character id="4"/>
+		<item id= "1" />
+	</character_item>
+	<character_item id="3">
+		<character id="1"/>
+		<item id= "2" />
+	</character_item>
+	<character_item id="4">
+		<character id="2"/>
+		<item id= "2" />
+	</character_item>
+	<character_item id="5">
+		<character id="4"/>
+		<item id= "2" />
+	</character_item>
+	<character_item id="6">
+		<character id="2"/>
+		<item id= "3" />
+	</character_item>
+	<character_item id="7">
+		<character id="3"/>
+		<item id= "3" />
+	</character_item>
+	<character_item id="8">
+		<character id="4"/>
+		<item id= "3" />
+	</character_item>
+	<character_item id="9">
+		<character id="1"/>
+		<item id= "4" />
+	</character_item>
+</characters_items>
