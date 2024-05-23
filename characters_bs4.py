@@ -45,12 +45,48 @@ if eleccion == '1':
 		else:
 			encontrado = True
 
-	print("Id\t" "Name\t\t" "Age\t" "Level")
 
 
-	print(f"{character['id']}\t {character.find('name').text}\t {character.find('age').text}\t{character.find('level')['value']}")
+	file = open('char_weapons.facwx', 'r')
 
+	soup =  BeautifulSoup(file, 'xml')
+
+	file.close()
+
+	characters_weapons = soup.find_all('character_weapon')
+
+	id_char_weap = []
+
+	for character_weapon in characters_weapons:
+		id_character = character_weapon.find("character")["id"]
+		if id_character == id:
+			id_weapon = character_weapon.find("weapon")["id"]
+			id_char_weap.append(id_weapon)
+
+
+	if len(id_char_weap) <= 0:
+		print("El personaje no tiene armas")
+		exit()
+
+	file = open('weapons.fawx', 'r')
+
+	soup = BeautifulSoup(file, 'xml')
+
+	file.close()
+
+	weapons = soup.find_all('weapon', {'id':True})
+	damage = 0
+
+	for weapon in weapons:
+		if weapon['id'] in id_char_weap:
+			damage = damage + int(weapon.find('damage')['value'])
 	
+
+	print("Id\t" "Name\t\t" "Age\t" "Level\t" "Damage")
+
+
+	print(f"{character['id']}\t {character.find('name').text}\t {character.find('age').text}\t{character.find('level')['value']}\t {damage}")
+
 elif eleccion == '2':
 
 	print("\nSelecciona un personaje para eliminar\n")

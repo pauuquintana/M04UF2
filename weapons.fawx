@@ -5,7 +5,7 @@
 	<weapon id="1">
 		<weapon>Puños</weapon>
 		<level value="5"/>
-		<damage value="10"/>
+		<damage value="30"/>
 		<weight value="0.25"/>
 	</weapon>
 	<weapon id="2">
@@ -17,13 +17,13 @@
 	<weapon id="3">
 		<weapon>Navajas</weapon>
 		<level value="50"/>
-		<damage value="16"/>
+		<damage value="45"/>
 		<weight value="2"/>
 	</weapon>
 	<weapon id="4">
 		<weapon>Extensible</weapon>
 		<level value="39"/>
-		<damage value="10"/>
+		<damage value="30"/>
 		<weight value="3"/>
 	</weapon>
 
