@@ -14,29 +14,73 @@ title = "Bienvenido a Fary Adventures"
 
 print(title)
 print("="*len(title))
-print("\nSelecciona un personaje para empezar a jugar\n")
 
-for character in characters:
-	print(f"{character['id']}\t {character.find('name').text}")
+print("\nQue quieres hacer?\n?")
+print("\n1- Seleccionar\n")
+print("\n2- Eliminar\n")
 
-encontrado = False
-while not encontrado:
-	id = input("\nInserta el id del personaje elegido: ")
+eleccion = input("\nEscribe 1 o 2: ")
 
-	file = open('characters.facx', 'r')
+if eleccion == 1:
 
-	soup =  BeautifulSoup(file, 'xml')
+	print("\nSelecciona un personaje para empezar a jugar\n")
 
-	file.close()
+	for character in characters:
+		print(f"{character['id']}\t {character.find('name').text}")
 
-	character = soup.find('character', {'id': id})
+	encontrado = False
+	while not encontrado:
+		id = input("\nInserta el id del personaje elegido: ")
 
-	if not character:
-		print("Error: id no encontrado")
-	else:
-		encontrado = True
+		file = open('characters.facx', 'r')
 
-print("Id\t" "Name\t\t" "Age\t" "Level")
+		soup =  BeautifulSoup(file, 'xml')
+
+		file.close()
+
+		character = soup.find('character', {'id': id})
+	
+		if not character:
+			print("Error: id no encontrado")
+		else:
+			encontrado = True
+
+	print("Id\t" "Name\t\t" "Age\t" "Level")
 
 
-print(f"{character['id']}\t {character.find('name').text}\t {character.find('age').text}\t{character.find('level')['value']}")
+	print(f"{character['id']}\t {character.find('name').text}\t {character.find('age').text}\t{character.find('level')['value']}")
+
+	
+elif eleccion == 2:
+
+	print("\nSelecciona un personaje para eliminarr\n")
+
+	for character in characters:
+		print(f"{character['id']}\t {character.find('name').text}")
+
+	encontrado = False
+	while not encontrado:
+		id = input("\nInserta el id del personaje: ")
+
+		file = open('characters.facx', 'r')
+
+		soup =  BeautifulSoup(file, 'xml')
+
+		file.close()
+
+		character = soup.find('character', {'id': id})
+	
+		if not character:
+			print("Error: id no encontrado")
+		else:
+			encontrado = True
+
+	print("Id\t" "Name\t\t" "Age\t" "Level")
+
+
+	print(f"{character['id']}\t {character.find('name').text}\t {character.find('age').text}\t{character.find('level')['value']}")
+
+
+
+
+
