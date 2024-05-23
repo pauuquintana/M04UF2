@@ -1,33 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <characters>
-	<character id="1">
-		<name>El Fary </name>
-		<age>86</age>
-		<gender value= "N" />
-		<level value= "200" />
-	</character>
-	<character id="2">
-		<name>El Cigala </name>
-		<age>54</age>
-		<gender value="M" />
-		<level value="150" />
-	</character>
-	<character id="3">
-		<name>El Churumbel </name>
-		<age>33</age>
-		<gender value="M" />
-		<level value="33" />
-	</character>
-	<character id="4">
-		<name>El Kiko </name>
-		<age>56</age>
-		<gender value="F" />
-		<level value="69" />
-	</character>
-	<character id="5">
-		<name>El Naranjito </name>
-		<age>23</age>
-		<gender value="N" />
-		<level value="76" />
-	</character>
+<character id="1">
+<name>El Fary </name>
+<age>86</age>
+<gender value="N"/>
+<level value="200"/>
+</character>
+<character id="2">
+<name>El Cigala </name>
+<age>54</age>
+<gender value="M"/>
+<level value="150"/>
+</character>
+<character id="3">
+<name>El Churumbel </name>
+<age>33</age>
+<gender value="M"/>
+<level value="33"/>
+</character>
+<character id="4">
+<name>El Kiko </name>
+<age>56</age>
+<gender value="F"/>
+<level value="69"/>
+</character>
+
 </characters>

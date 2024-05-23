@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<weapons>
+	<weapon id="1">
+		<weapon>Puños</weapon>
+		<level value="5"/>
+		<damage value="10"/>
+		<weight value="0.25"/>
+	</weapon>
+	<weapon id="2">
+		<weapon>SPAS-12</weapon>
+		<level value="50"/>
+		<damage value="80"/>
+		<weight value="2"/>
+	</weapon>
+	<weapon id="3">
+		<weapon>Navajas</weapon>
+		<level value="50"/>
+		<damage value="16"/>
+		<weight value="2"/>
+	</weapon>
+	<weapon id="4">
+		<weapon>Extensible</weapon>
+		<level value="39"/>
+		<damage value="10"/>
+		<weight value="3"/>
+	</weapon>
+
+</weapons>
+
+
+
+
+

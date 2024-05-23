@@ -15,13 +15,13 @@ title = "Bienvenido a Fary Adventures"
 print(title)
 print("="*len(title))
 
-print("\nQue quieres hacer?\n?")
-print("\n1- Seleccionar\n")
-print("\n2- Eliminar\n")
+print("\nQue quieres hacer?\n")
+print("1- Seleccionar\n")
+print("2- Eliminar\n")
 
 eleccion = input("\nEscribe 1 o 2: ")
 
-if eleccion == 1:
+if eleccion == '1':
 
 	print("\nSelecciona un personaje para empezar a jugar\n")
 
@@ -51,9 +51,9 @@ if eleccion == 1:
 	print(f"{character['id']}\t {character.find('name').text}\t {character.find('age').text}\t{character.find('level')['value']}")
 
 	
-elif eleccion == 2:
+elif eleccion == '2':
 
-	print("\nSelecciona un personaje para eliminarr\n")
+	print("\nSelecciona un personaje para eliminar\n")
 
 	for character in characters:
 		print(f"{character['id']}\t {character.find('name').text}")
@@ -62,25 +62,23 @@ elif eleccion == 2:
 	while not encontrado:
 		id = input("\nInserta el id del personaje: ")
 
-		file = open('characters.facx', 'r')
+		dead_character = soup.find('character', {'id': id})
+		
 
-		soup =  BeautifulSoup(file, 'xml')
-
-		file.close()
-
-		character = soup.find('character', {'id': id})
-	
-		if not character:
+		if not dead_character:
 			print("Error: id no encontrado")
 		else:
+			dead_character.decompose()
 			encontrado = True
 
-	print("Id\t" "Name\t\t" "Age\t" "Level")
+	with open('characters.facx', 'w') as file:
+		file.write(str(soup))
+	
 
+	characters = soup.find_all("character")
 
-	print(f"{character['id']}\t {character.find('name').text}\t {character.find('age').text}\t{character.find('level')['value']}")
-
-
+	for character in characters:
+		print(f"{character['id']}\t {character.find('name').text}")
 
 
 
